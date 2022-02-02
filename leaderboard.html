@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#00796B">
+    <meta name="msapplication-navbutton-color" content="#00796B">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00796B">
+    <meta name="description" content="Online Quiz is a website created by Ahmed Saber, where you can test your skills in web development.">
+    <meta name="keywords" content="web development, skill test, html, css, js, leaderboard api, Ahmed Saber, ahmed0saber">
+    <meta name="author" content="Ahmed Saber, ahmed0saber33@gmail.com, ahmed0saber">
+    <meta name="og:title" content="Online Quiz">
+    <meta name="og:description" content="Online Quiz is a website created by Ahmed Saber, where you can test your skills in web development.">
+    
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    
+    <meta name="og:type" content="Skill Test">
+    <meta name="og:email" content="ahmed0saber33@gmail.com">
+    <meta name="og:phone_number" content="+201208611892">
+    <meta name="og:country-name" content="Egypt">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz | Leaderboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <script type="text/javascript" src= "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar-fixed">
+        <nav class="nav-extended teal darken-2">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><span>O</span>nline <span>Q</span>uiz</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger" href="./index.html">Home</a></li>
+                    <li><a class="modal-trigger" href="./html.html">HTML</a></li>
+                    <li><a class="modal-trigger" href="./css.html">CSS</a></li>
+                    <li><a class="modal-trigger" href="./js.html">JavaScript</a></li>
+                    <li><a class="modal-trigger" href="./leaderboard.html">Leaderboard</a></li>
+                    <li><a class="modal-trigger" href="./about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-content hide-on-large-only">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="./index.html"><i class="material-icons">home</i></a></li>
+                    <li class="tab"><a href="./html.html"><i class="material-icons">html</i></a></li>
+                    <li class="tab"><a href="./css.html"><i class="material-icons">css</i></a></li>
+                    <li class="tab"><a href="./js.html"><i class="material-icons">javascript</i></a></li>
+                    <li class="tab"><a href="./leaderboard.html"><i class="material-icons">leaderboard</i></a></li>
+                    <li class="tab"><a href="./about.html"><i class="material-icons">info</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="nav-extended teal darken-2 leaderboard-nav">
+            <div class="nav-content">
+                <button class="tab btn transparent waves-effect waves-light">HTML</button>
+                <button class="tab btn transparent waves-effect waves-light">CSS</button>
+                <button class="tab btn transparent waves-effect waves-light">JavaScript</button>
+            </div>
+        </nav>
+
+        <table id="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>RANK</th>
+                    <th>NAME</th>
+                    <th>SCORE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ahmed</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Saber</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fathy</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                <h5 class="white-text">Created by Ahmed Saber</h5>
+                <p class="grey-text text-lighten-4">Ahmed Saber is an egyptian Full Stack Web Developer who was born in 2001.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Used Technologies</h5>
+                <ul>
+                    <li class="left">HTML5</li>
+                    <li class="right">CSS3</li><br>
+                    <li class="left">JavaScript</li>
+                    <li class="right">jQuery</li><br>
+                    <li class="left">Materialize.css</li>
+                    <li class="right">Google Fonts</li><br>
+                    <li class="left">Material Icons</li>
+                    <li class="right">Font Awesome</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            <span class="right">© 2022 Copyright : Ahmed Saber</span>
+            <a class="grey-text text-lighten-4 left" href="#!"><i class="fa fa-facebook"></i><i class="fa fa-instagram"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
