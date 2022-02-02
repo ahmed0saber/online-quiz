@@ -9,7 +9,7 @@ let build_board = async (name) => {
     container.innerHTML = `<thead>
     <tr>
         <th>RANK</th>
-        <th>NAME</th>
+        <th id='names'>NAME</th>
         <th>SCORE</th>
     </tr>
 </thead>`;
@@ -23,7 +23,7 @@ let build_board = async (name) => {
             <td id='ranks'>
                 ${x}
             </td>
-            <td id='names'>
+            <td id='names' class='truncate'>
                 ${item.name}
             </td>
             <td id='scores'>

@@ -5,7 +5,7 @@
     font-family: "Alegreya", sans-serif;
 }
 body{
-    background-color: #ffe7e7;
+    background-color: #f7ffff;
     min-height: 100vh;
 }
 nav{
@@ -44,7 +44,11 @@ main .btn-large{
 /* LEADERBOARD */
 table{
     width: 80%;
+    max-width: 500px;
     margin: 0 auto;
+}
+#names{
+    max-width: 200px;
 }
 .leaderboard-nav{
     width: 80%;
